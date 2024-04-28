@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="js/script.js"></script>
+
+    <div class="patterns pt1">
+
+    <h1>Temperature Converter</h1>
+
+    <h2>Select the unit you want to convert:</h2>
+    <div class="buttonsConvert">
+        <button onclick="showCelsius()">Celsius</button>
+        <button onclick="showKelvin()">Kelvin</button>
+        <button onclick="showFahrenheit()">Fahrenheit</button>
+    </div>
+
+    <div id="celsius">
+        <form action="">
+            <input type="number" name="celsius" id="ctemp"><br>
+        </form>
+        <div class="buttonsConvert">
+            <button onclick="celsiusConvert()">Convert</button>
+        </div>
+        <p id="cToFdisplay"></p>
+        <p id="cToKdisplay"></p>
+    </div>
+
+    <div id="kelvin">
+        <form action="">
+            <input type="number" name="kelvin" id="ktemp"><br>
+        </form>
+        <div class="buttonsConvert">
+            <button onclick="kelvinConvert()">Convert</button>
+        </div>
+        <p id="kToCdisplay"></p>
+        <p id="kToFdisplay"></p>
+    </div>
+
+    <div id="fahrenheit">
+        <form action="">
+            <input type="number" name="fahrenheit" id="ftemp"><br>
+        </form>
+        <div class="buttonsConvert">
+            <button onclick="fahrenheitConvert()">Convert</button>
+        </div>
+        <p id="fToCdisplay"></p>
+        <p id="fToKdisplay"></p>
+    </div>
+</div>
+</body>
+</html>
