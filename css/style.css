@@ -1,0 +1,128 @@
+/* Body n' background */
+body {
+    margin: 0px;
+}
+ 
+.patterns {
+    width: 100%;
+    height: 100%;
+}
+ 
+.pt1 {
+    background-size: 50px 50px;
+    background-color: #0ae;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+}
+
+/* Text n' headers */
+
+h1 {
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #EE5A24, #EA2027);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #EE5A24, #EA2027);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    justify-content: center;
+}
+
+/* Buttons */
+
+button {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+button:hover,
+button:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+button:hover {
+    transform: translateY(-1px);
+  }
+  
+button:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+/* Site stuff */
+#celsius {
+    display: none;
+    z-index: 1;
+}
+
+#kelvin {
+    display: none;
+}
+
+#fahrenheit {
+    display: none;
+}
+
+.buttonsConvert {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid orange;
+    border-radius: 1px;
+}
+
+#celsius, #kelvin, #fahrenheit {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
